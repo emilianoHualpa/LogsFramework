@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = "LogsFramework"
- s.version = "0.0.2"
+ s.version = "0.0.1"
  s.summary = "LogsFramework"
  s.description = "Framework to write logs in iOS and WatchOS"
  s.homepage = "https://github.com/emilianoHualpa/LogsFramework"

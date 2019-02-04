@@ -11,10 +11,10 @@
 		26B2C99322086E11009C650E /* LogsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C99222086E11009C650E /* LogsFrameworkTests.swift */; };
 		26B2C99522086E11009C650E /* LogsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B2C98722086E11009C650E /* LogsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26B2C9A122086E3E009C650E /* iOSLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C9A022086E3E009C650E /* iOSLogs.swift */; };
-		26B2C9A322086E48009C650E /* LogsMachene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C9A222086E48009C650E /* LogsMachene.swift */; };
+		26B2C9A322086E48009C650E /* LogsMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C9A222086E48009C650E /* LogsMachine.swift */; };
 		26B2C9AD22086F1B009C650E /* WhatchLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B2C9AB22086F1B009C650E /* WhatchLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26B2C9B322086F43009C650E /* WatchLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C9B222086F43009C650E /* WatchLogs.swift */; };
-		26B2C9B422086F6C009C650E /* LogsMachene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C9A222086E48009C650E /* LogsMachene.swift */; };
+		26B2C9B422086F6C009C650E /* LogsMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2C9A222086E48009C650E /* LogsMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		26B2C99222086E11009C650E /* LogsFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsFrameworkTests.swift; sourceTree = "<group>"; };
 		26B2C99422086E11009C650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B2C9A022086E3E009C650E /* iOSLogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLogs.swift; sourceTree = "<group>"; };
-		26B2C9A222086E48009C650E /* LogsMachene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsMachene.swift; sourceTree = "<group>"; };
+		26B2C9A222086E48009C650E /* LogsMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsMachine.swift; sourceTree = "<group>"; };
 		26B2C9A922086F1B009C650E /* WhatchLogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatchLogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B2C9AB22086F1B009C650E /* WhatchLogs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatchLogs.h; sourceTree = "<group>"; };
 		26B2C9AC22086F1B009C650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,11 +71,9 @@
 		26B2C97A22086E11009C650E = {
 			isa = PBXGroup;
 			children = (
-				26B2C99F22086E29009C650E /* iOS */,
-				26B2C99E22086E1F009C650E /* Share */,
 				26B2C98622086E11009C650E /* LogsFramework */,
+				26B2CA0A220880B7009C650E /* WatchLogsFramework */,
 				26B2C99122086E11009C650E /* LogsFrameworkTests */,
-				26B2C9AA22086F1B009C650E /* WhatchLogs */,
 				26B2C98522086E11009C650E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +91,8 @@
 		26B2C98622086E11009C650E /* LogsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				26B2C99F22086E29009C650E /* iOS */,
+				26B2C99E22086E1F009C650E /* Share */,
 				26B2C98722086E11009C650E /* LogsFramework.h */,
 				26B2C98822086E11009C650E /* Info.plist */,
 			);
@@ -111,7 +111,7 @@
 		26B2C99E22086E1F009C650E /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				26B2C9A222086E48009C650E /* LogsMachene.swift */,
+				26B2C9A222086E48009C650E /* LogsMachine.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -140,6 +140,14 @@
 				26B2C9B222086F43009C650E /* WatchLogs.swift */,
 			);
 			path = WatchOS;
+			sourceTree = "<group>";
+		};
+		26B2CA0A220880B7009C650E /* WatchLogsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				26B2C9AA22086F1B009C650E /* WhatchLogs */,
+			);
+			path = WatchLogsFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B2C9A322086E48009C650E /* LogsMachene.swift in Sources */,
+				26B2C9A322086E48009C650E /* LogsMachine.swift in Sources */,
 				26B2C9A122086E3E009C650E /* iOSLogs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B2C9B422086F6C009C650E /* LogsMachene.swift in Sources */,
+				26B2C9B422086F6C009C650E /* LogsMachine.swift in Sources */,
 				26B2C9B322086F43009C650E /* WatchLogs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
