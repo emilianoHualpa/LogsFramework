@@ -36,7 +36,7 @@
 		26B2C99422086E11009C650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B2C9A022086E3E009C650E /* iOSLogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLogs.swift; sourceTree = "<group>"; };
 		26B2C9A222086E48009C650E /* LogsMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsMachine.swift; sourceTree = "<group>"; };
-		26B2C9A922086F1B009C650E /* WhatchLogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatchLogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B2C9A922086F1B009C650E /* WhatchLogsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatchLogsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B2C9AB22086F1B009C650E /* WhatchLogs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatchLogs.h; sourceTree = "<group>"; };
 		26B2C9AC22086F1B009C650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B2C9B222086F43009C650E /* WatchLogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLogs.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			children = (
 				26B2C98422086E11009C650E /* LogsFramework.framework */,
 				26B2C98D22086E11009C650E /* LogsFrameworkTests.xctest */,
-				26B2C9A922086F1B009C650E /* WhatchLogs.framework */,
+				26B2C9A922086F1B009C650E /* WhatchLogsFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,9 +208,9 @@
 			productReference = 26B2C98D22086E11009C650E /* LogsFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		26B2C9A822086F1B009C650E /* WhatchLogs */ = {
+		26B2C9A822086F1B009C650E /* WhatchLogsFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26B2C9AE22086F1B009C650E /* Build configuration list for PBXNativeTarget "WhatchLogs" */;
+			buildConfigurationList = 26B2C9AE22086F1B009C650E /* Build configuration list for PBXNativeTarget "WhatchLogsFramework" */;
 			buildPhases = (
 				26B2C9A422086F1B009C650E /* Headers */,
 				26B2C9A522086F1B009C650E /* Sources */,
@@ -221,9 +221,9 @@
 			);
 			dependencies = (
 			);
-			name = WhatchLogs;
+			name = WhatchLogsFramework;
 			productName = WhatchLogs;
-			productReference = 26B2C9A922086F1B009C650E /* WhatchLogs.framework */;
+			productReference = 26B2C9A922086F1B009C650E /* WhatchLogsFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +263,7 @@
 			targets = (
 				26B2C98322086E11009C650E /* LogsFramework */,
 				26B2C98C22086E11009C650E /* LogsFrameworkTests */,
-				26B2C9A822086F1B009C650E /* WhatchLogs */,
+				26B2C9A822086F1B009C650E /* WhatchLogsFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -472,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.ehualpa.LogsFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.ehualpa.LogsFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -555,7 +555,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WhatchLogs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WatchLogsFramework/WhatchLogs/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,7 +565,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.ehualpa.WhatchLogs;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -585,7 +585,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WhatchLogs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WatchLogsFramework/WhatchLogs/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.ehualpa.WhatchLogs;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.1;
@@ -632,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26B2C9AE22086F1B009C650E /* Build configuration list for PBXNativeTarget "WhatchLogs" */ = {
+		26B2C9AE22086F1B009C650E /* Build configuration list for PBXNativeTarget "WhatchLogsFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26B2C9AF22086F1B009C650E /* Debug */,
