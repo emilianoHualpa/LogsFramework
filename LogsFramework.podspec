@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
  s.name = "LogsFramework"
- s.version = "0.0.1"
+ s.version = "0.0.2"
  s.summary = "LogsFramework"
  s.description = "Framework to write logs in iOS and WatchOS"
- s.homepage = "https://github.com/crisbarril/LogsFramework"
+ s.homepage = "https://github.com/emilianoHualpa/LogsFramework"
  s.license = { :type => "MIT" }
- s.author = "Cristian Barril" 
+ s.author = "Emiliano Hualpa" 
  s.swift_version = '4.0'
  
  s.source = { :git => "https://github.com/emilianoHualpa/LogsFramework.git", :tag => s.version }
